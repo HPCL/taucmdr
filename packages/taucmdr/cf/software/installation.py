@@ -216,7 +216,7 @@ class Installation(object):
             if isinstance(self.src, list):
                 self.srcs = self.src
                 self.srcs_avail = self.srcs[:]
-                self.src = self.srcs.pop(0)
+                self.src = self.srcs[0]
             else:
                 self.srcs = []
                 self.srcs_avail = [self.src]
